@@ -1,0 +1,476 @@
+@font-face {
+    font-family: FranklinGothic;
+    src: url(./../fonts/FranklinGothic.ttf);
+}
+@font-face {
+    font-family: Jokerman;
+    src: url(./../fonts/Jokerman.ttf);
+}
+@font-face {
+    font-family: GEO212NC;
+    src: url(./../fonts/GEO212NC.ttf);
+}
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Cabeçalho/Barra de navegação */
+#navega{
+    display:flex;
+    justify-content: space-around;
+    background-color: #49007E;
+}
+#topo{
+    display:flex;
+    margin:0px;
+    margin-right: 10px;
+}
+li{
+    padding: 5px;
+    height: 40px;
+}
+li > a{
+    font-family: 'FranklinGothic';
+    font-size: 1.3rem;
+}
+li > a:hover{
+    transition: 0.1s;
+    border-bottom: solid 2px white;
+}
+#btn-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+    width: 150px;
+    background-color: #ff005B;
+    color: white;
+    border: none;
+}
+#btn-login:hover{
+    transition: 0.3s;
+    background-color: #c50045;
+}
+/* main */
+.section-cadastro{
+    width: 100%;
+    height: auto;
+    background-color: #ff005B;
+    display: flex;
+    justify-content: center;
+}
+/*form*/
+.form{
+    height: auto;
+    background-color: white;
+}
+/*logo da pagina*/
+.img-form{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-form > img{
+    width: 90px;
+}
+/*titulo da pagina*/
+.img-form > h1{
+    font-family: 'GEO212NC';
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/*div-inputs*/
+.div-inputs{
+    width: 100%;
+    height: auto;
+    color: #451580;
+}
+/*box form*/
+.box-form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+/*div dos inputs*/
+.form-controll {
+    width: 100%;
+    height: auto;
+}
+/*todos os input do form*/
+
+.form-controll input{
+    border: 2px solid transparent;
+    border-bottom: 3px solid #bec1c4;
+    width: 100%;
+    height: auto;
+    outline: none;
+    list-style: none;
+    height: 35px;
+    background-color: #f0f0f0;
+}
+input:focus{
+    border: 2px solid #451580;
+}
+/*todas as label do form*/
+.form-controll label {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'GEO212NC';
+    margin: 5px 0px 5px 0px;
+}
+/**/
+#myCheck > b{
+    font-weight: 200;
+}
+/*ver senha*/
+.verSenha{
+    margin-top: 10px;
+}
+/*Alerta de limite de caracteres*/
+.textAlertSenha{
+    text-align: justify;
+    display: flex;
+    font-weight: 0;
+    font-size: 1rem;
+    color: #451580;
+}
+/*Botão do form*/
+.btn-cadastro{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #49007e;
+    font-family: 'GEO212NC';
+    border-radius: 8px;
+    border: none;
+    font-size: 1.5rem;
+}
+.btn-cadastro:hover{
+    transition: 0.3s;
+    background-color: #320453;
+    box-shadow: 0px 0px 5px black;
+}
+/*termos*/
+.termos{
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0px 10px 0px 10px;
+}
+.termos > a{
+    color:  #451580;
+    text-decoration: none;
+}
+.termos > a:hover{
+    text-decoration: none;
+}
+/*hr*/
+    .hr{
+        background-color: black;
+    }
+/* Rodape */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    background-color: #49007E;
+    color: #ffffff;
+}
+.box-table{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px;
+}
+hr{
+    width: 100%;
+    padding: 1px;
+}
+.apresentRodape{
+    display: flex;
+    width: 200px;
+    text-align: justify;
+}
+footer > div > table, tr{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: white;
+} 
+.rodFlex{
+    text-decoration: none;
+    display: flex;
+}
+.tab{
+    margin-top: 50px;
+}
+.red-sociais{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.red-sociais > div > a{
+    margin: 5px;
+}
+@media (max-width:320px) {
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+    /*hr*/
+    .hr{
+        width: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    /*form*/
+   .form{
+       width: 90%;
+        border-radius: 40px;
+    }
+     /*box form*/
+     .box-form {
+        margin: 0px 20px 0px 20px;
+    }
+    /* main */
+    .section-cadastro{
+        padding: 50px 5px 50px 5px;
+    }
+    /*Alerta de limite de caracteres*/
+   .textAlertSenha{
+        width: 130px;
+        height: auto;
+    }
+ }
+@media (min-width:320px) {
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+    /*hr*/
+    .hr{
+        width: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    /*form*/
+   .form{
+        width: 90%;
+        border-radius: 40px;
+    }
+    /*box form*/
+    .box-form {
+        margin: 0px 20px 0px 20px;
+    }
+    /* main */
+    .section-cadastro{
+        padding: 50px 5px 50px 5px;
+    }
+    /*Alerta de limite de caracteres*/
+    .textAlertSenha{
+        width: 200px;
+        height: 47px;
+    }
+ }
+@media (min-width:480px) {
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+    /*hr*/
+    .hr{
+        width: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    /*form*/
+   .form{
+        width: 90%;
+        border-radius: 40px;
+    }
+    /*box form*/
+    .box-form {
+        margin: 0px 20px 0px 20px;
+    }
+    /* main */
+    .section-cadastro{
+        padding: 50px 10px 50px 10px;
+    }
+    /*Alerta de limite de caracteres*/
+    .textAlertSenha{
+        width: 200px;
+        height: 47px;
+    }
+  }
+@media (min-width:600px) { 
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+    /*hr*/
+    .hr{
+        width: 3px;
+        padding: 200px 0px 200px 0px;
+        margin: 0% 5% 0% 5%;
+    }
+    /*div-inputs*/
+    .div-inputs{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /*box form*/
+    .box-form {
+        width: 35%;
+    }
+   /*form*/
+   .form{
+       width: 90%;
+       border-radius: 100px;
+   }
+   /* main */
+   .section-cadastro{
+        padding: 50px 10px 50px 10px;
+   }
+   /*Alerta de limite de caracteres*/
+   .textAlertSenha{
+        width: 180px;
+        height: 68px;
+    }
+}
+@media (min-width:801px) { 
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 80px;
+    }
+    /*hr*/
+    .hr{
+        width: 3px;
+        padding: 200px 0px 200px 0px;
+        margin: 0% 5% 0% 5%;
+    }
+    /*div-inputs*/
+    .div-inputs{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /*box form*/
+    .box-form {
+        width: 35%;
+   }
+   /*form*/
+   .form{
+        width: 80%;
+        border-radius: 100px;
+   }
+   /* main */
+   .section-cadastro{
+        padding: 50px;
+    }
+    /*Alerta de limite de caracteres*/
+    .textAlertSenha{
+        width: 200px;
+        height: 47px;
+    }
+}
+@media (min-width:1025px) { 
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+    /*hr*/
+    .hr{
+        width: 3px;
+        padding: 200px 0px 200px 0px;
+        margin: 0% 8% 0% 8%;
+    }
+    /*div-inputs*/
+    .div-inputs{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /*box form*/
+    .box-form {
+        width: 30%;
+   }
+   /*form*/
+   .form{
+        width: 80%;
+        border-radius: 100px;
+   }
+   /* main */
+   .section-cadastro{
+        padding: 50px;
+   }
+   /*Alerta de limite de caracteres*/
+   .textAlertSenha{
+        width: 200px;
+        height: 47px;
+   }
+}
+@media (min-width:1281px) { 
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+    /* main */
+    .section-cadastro{
+        padding: 50px;
+    }
+    /*form*/
+    .form{
+        width: 70%;
+        border-radius: 100px;
+
+    }
+    /*hr*/
+    .hr{
+        width: 5px;
+        padding: 200px 0px 200px 0px;
+        margin: 0% 8% 0% 8%;
+    }   
+    /*box form*/
+   .box-form {
+        width: 30%;
+    }
+    /*div-inputs*/
+    .div-inputs{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /*Alerta de limite de caracteres*/
+    .textAlertSenha{
+        width: 200px;
+        height: 47px;
+    }
+}
