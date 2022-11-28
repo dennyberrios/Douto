@@ -1,0 +1,478 @@
+@font-face {
+    font-family: GEO212NC;
+    src: url(./../../fonts/GEO212NC.ttf);
+}
+@font-face {
+    font-family: FranklinGothic;
+    src: url(./../../fonts/FranklinGothic.ttf);
+}
+@font-face {
+    font-family: panetaX;
+    src: url(./../../fonts/PlanetXCompact-2oGX.otf);
+}
+
+/* aprensentação do inicio da home */
+.color-apresentacao{
+    background-color: #ff005B;
+    display: flex;
+}
+.apresentacao{
+    width: 100%;
+    color: white;
+}
+.textAresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.textApresentacao > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: -10px;
+}
+.textApresentacao > div > h1{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-family: 'panetaX';
+}
+.textApresentacao > div > p{
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: 'GEO212NC';
+    font-weight: bolder;
+}
+/* carrosel da home */
+.color-carrossel{
+    display: flex;
+    background-color: #ffb238;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#carouselExampleControls{
+    border-radius: 15px;
+}
+.carousel-item > img{
+    border-radius: 15px;
+}
+.quemSou > h2{
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'GEO212NC';
+    font-weight: 600;
+    text-align: justify;
+}
+/* jogos e historias da home */
+.jogosHistoria{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.conteudoHome{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    border: none;
+}
+.conteudoHome:hover{
+    transition: 0.2s;
+    box-shadow: 0 0 7px black;
+}
+.quintoAno{
+    background-image: url("./../../assets/img/home/jogos.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.sextoAno{
+    background-image: url("./../../assets/img/home/jogos.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width:320px){
+    /* Jogos/historia */
+    .item{
+        width: 300px;
+        height: 200px;
+        margin: 30px 0px 30px 0px;
+    }
+    /* Texto da apresentação */
+    .textApresentacao{
+        width: 250px;
+        margin-top: 30px;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 90%;
+        border-radius: 15px;
+        margin: 30px 10px 30px 10px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .imgApresentacao{
+        width: 250px;
+        height: 150px;
+        margin-bottom: 30px;
+        background-image: url("./../../assets/img/Home/teste.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .apresentacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+    .quemSou > h2{
+        font-size: 1.1rem;
+    }.quemSou{
+        width: 250px;
+    }
+ }
+@media (min-width:320px){
+    /* Jogos/historia */
+    .item{
+        width: 280px;
+        height: 250px;
+        margin: 20px;
+    }
+    /* Texto da apresentação */
+    .textApresentacao{
+        width: 320px;
+        margin-top: 30px;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 300px;
+        border-radius: 15px;
+        margin: 30px 10px 30px 10px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .imgApresentacao{
+        width: 315px;
+        height: 200px;
+        margin-bottom: 30px;
+        background-image: url("./../../assets/img/Home/teste.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .apresentacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin: 10px 10px 10px 10px;
+        height: 65px;
+    }
+    .quemSou > h2{
+        font-size: 2.4rem;
+    }
+    .quemSou > h2{
+        font-size: 1.1rem;
+    }.quemSou{
+        width: 300px;
+    }
+ }
+@media (min-width:480px) {
+    /* Jogos/historia */
+    .jogosHistoria{
+        height: auto;
+    }
+    .item{
+        width: 400px;
+        height: 300px;
+        margin-top: 30px;
+    }
+    /* Texto da apresentação */
+    .textApresentacao{
+        width: 460px;
+        margin: 30px 10px 30px 10px;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 400px;
+        border-radius: 15px;
+        margin: 30px 10px 30px 10px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .imgApresentacao{
+        width: 400px;
+        height: 220px;
+        margin: -30px 0px 30px 0px;
+        background-image: url("./../../assets/img/Home/teste.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .apresentacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+    .quemSou > h2{
+        font-size: 1.1rem;
+    }.quemSou{
+        width: 450px;
+    }
+  }
+@media (min-width:600px) {
+    /* Jogos/historia */
+    .jogosAistoria{
+        height: auto;
+    }
+    .item{
+        width: 400px;
+        height: 300px;
+        margin: 30px 0px 30px 0px;
+    } 
+    /* Texto da apresentação */
+    .textApresentacao{
+        width: 480px;
+        margin-top: 30px;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 300px;
+        border-radius: 15px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .imgApresentacao{
+        width: 400px;
+        height: 220px;
+        margin: -30px 0px 30px 0px;
+        background-image: url("./../../assets/img/Home/teste.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .apresentacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+    .quemSou > h2{
+        font-size: 2.4rem;
+    }
+    .quemSou > h2{
+        font-size: 1.1rem;
+    }.quemSou{
+        width: 300px;
+    }
+ }
+@media (min-width:801px) {
+    /* Jogos/historia */
+    .jogosAistoria{
+        height: auto;
+    }
+    .item{
+        width: 400px;
+        height: 300px;
+        margin: 30px 0px 30px 0px;
+    }
+    /* Apresentação */
+    .apresentacao{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    /* Texto da apresentação */
+    .textApresentacao{
+        width: 400px;
+        margin: 50px 0px 50px 0px;
+    }
+    .text-apresentacao > div > h1{
+        font-size: 2.9rem;
+    }
+    .textApresentacao > div > p{
+        font-size: 1.2rem;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 400px;
+        border-radius: 15px;
+        margin: 30px 0px 30px 0px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .imgApresentacao{
+        width: 360px;
+        height: 220px;
+        margin: 10px;
+        background-image: url("./../../assets/img/Home/teste.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 80px;
+    }
+    .quemSou > h2{
+        font-size: 1.3rem;
+    }.quemSou{
+        width: 400px;
+    }
+ }
+ @media (min-width:1025px) {
+    /* Jogos/historia */
+    .jogosHistoria{
+        height: auto;
+    }
+    .item{
+        width: 400px;
+        height: 300px;
+        margin: 30px 0px 30px 0px;
+    }
+    /* Apresentação */
+    .apresentacao{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    /* Texto da apresentação */
+    .textApresentacao{
+        width: 520px;
+        margin: 50px 0px 50px 0px;
+    }
+    
+    .textApresentacao > div > h1{
+        font-size: 3rem;
+    }
+    .textApresentacao > div > p{
+        font-size: 1.5rem;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 500px;
+        border-radius: 15px;
+        margin: 30px 0px 30px 0px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .imgApresentacao{
+        width: 480px;
+        height: 250px;
+        margin: 10px;
+        background-image: url("./../../assets/img/Home/teste.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+    .quemSou > h2{
+        font-size: 1.5rem;
+    }.quemSou{
+        width: 480px;
+        padding: 10px;
+    }
+  }
+ 
+@media (min-width:1281px) {
+    /* Jogos/historia */
+    .jogosHistoria{
+        height: auto;
+    }
+    .item{
+        width: 500px;
+        height: 400px;
+        margin: 30px 0px 30px 0px;
+    }
+    /* Apresentação */
+    .apresentacao{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    /* Texto da apresentação */
+    .textApresentacao{
+        width: 500px;
+        margin: 50px 0px 50px 0px;
+    }
+    
+    .textApresentacao > div > h1{
+        font-size: 3rem;
+    }
+    .textApresentacao > div > p{
+        font-size: 1.5rem;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 500px;
+        border-radius: 15px;
+        margin: 30px 0px 30px 0px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .imgApresentacao{
+        width: 550px;
+        height: 300px;
+        margin: 10px;
+        background-image: url("./../../assets/img/Home/teste.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    /* Logo */
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+    .quemSou > h2{
+        font-size: 1.5rem;
+    }
+    .quemSou{
+        width: 480px;
+    }
+ }
