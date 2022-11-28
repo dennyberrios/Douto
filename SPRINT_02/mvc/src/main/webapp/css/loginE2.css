@@ -1,0 +1,559 @@
+@font-face {
+    font-family: FranklinGothic;
+    src: url(../fonts/FranklinGothic.ttf);
+}
+@font-face {
+    font-family: Jokerman;
+    src: url(../fonts/Jokerman.ttf);
+}
+@font-face {
+    font-family: GEO212NC;
+    src: url(../fonts/GEO212NC.ttf);
+}
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Cabeçalho/Barra de navegação */
+#navega{
+    display:flex;
+    justify-content: space-around;
+
+    background-color: #49007E;
+}
+#topo{
+    display:flex;
+    margin:0px;
+    margin-right: 10px;
+}
+li{
+    padding: 5px;
+    height: 40px;
+}
+li > a{
+    font-family: 'FranklinGothic';
+    font-size: 1.3rem;
+}
+li > a:hover{
+    transition: 0.1s;
+    border-bottom: solid 2px white;
+}
+#btn-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+    width: 150px;
+    background-color: #ff005B;
+    color: white;
+    border: none;
+}
+#btn-login:hover{
+    transition: 0.3s;
+    background-color: #c50045;
+}
+/* main */
+section{
+    width: 100%;
+    height: auto;
+    background-color: #ff005B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: #49007E;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*img*/
+.box-img{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.foto-apresenta{
+    width: 100%;
+}
+.box-login{
+    background-color: white;
+}
+.box-login{
+    width: 370px;
+}
+.logo-login{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo-login > h1{
+    color: black;
+    font-family: 'GEO212NC';
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.logo-login > img{
+    margin-top: 20px;
+    width: 80px;
+}
+.form-login{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #43007c;
+}
+.item1{
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border: 3px solid red;
+    background-color: #f0f0f0;
+}
+.login{
+    width: 100%;
+    height: 40px;
+    margin: 0px 10px 0px 10px;
+}
+.senha{
+    width: 100%;
+    height: 40px;
+    margin-left: 10px;
+}
+#olho{
+    width: 20px;
+    margin: 5px;
+    margin-right: 10px;
+}
+.item2{
+    outline: none;
+    border: none;
+    font-family: 'GEO212NC';
+    background-color: #f0f0f0;
+}
+.item2:focus{
+    transition: 0.2s;
+    background-color: #e8e8e8;
+    border-radius: 15px;
+}
+
+#butao{
+    height: 50px;
+    margin: 20px;
+    background-color: #49007e;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+#butao:hover{
+    transition: 0.2s;
+    background-color: #390062;
+}
+.msg-label{
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'GEO212NC';
+    text-align: center;
+}
+#adm{
+    width: 60%;
+    height: 40px;
+    background-color: #ff005B;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#adm:hover{
+    transition: 0.3s;
+    background-color: #c50045;
+}
+.loginadm{
+    padding: 2% 27% 2% 27%;
+    font-family: 'GEO212NC';
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.loginadm:hover{
+    color: white;
+}
+.hr{
+    width: 80%;
+}
+/* Alerta de lofin ou senha errada*/
+.aviso{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.cria-conta{
+    font-family: 'GEO212NC';
+    text-decoration: none;
+    color: #43007c;
+}
+.cria-conta:hover{
+    transition: 0.2s;
+    color: rgb(132, 80, 169);
+}
+
+/* Rodape */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    background-color: #49007E;
+    color: #ffffff;
+}
+.box-table{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px;
+}
+hr{
+    width: 100%;
+    padding: 1px;
+}
+.apresentRodape{
+    display: flex;
+    width: 200px;
+    text-align: justify;
+}
+footer > div > table, tr{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: white;
+} 
+.rodFlex{
+    text-decoration: none;
+    display: flex;
+}
+.tab{
+    margin-top: 50px;
+}
+.red-sociais{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.red-sociais > div > a{
+    margin: 5px;
+}
+
+@media (max-width:320px) {
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+    /*box*/
+    .box{
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        border-radius: 0px 0px 30px 30px;
+        margin: 50px 0px 50px 0px;
+    }
+    /* div da img*/
+    .box-img{
+        width: 100%;
+        height: 350px;
+    }
+    /* img */
+    .foto-apresenta{
+        height: 100%;
+        margin-top: 20px;
+    }
+    /* caixa do login*/
+    .box-login{
+        height: 650px;
+        border-radius: 30px;
+    }
+    /* caixa de login*/
+    .box-login{
+        width: 100%;
+    }
+    /*input de login e senha*/
+    .item1{
+        width: 80%;
+    }
+    /*botão de envio do login*/
+    #butao{
+        width: 80%;
+    }
+ }
+@media (min-width:320px) {
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+    /*box*/
+    .box{
+        width: 315px;
+        height: auto;
+        justify-content: center;
+        border-radius: 0px 0px 30px 30px;
+        margin: 50px 0px 50px 0px;
+    }
+    /* div da img*/
+    .box-img{
+        width: 100%;
+        height: 350px;
+    }
+    /* img */
+    .foto-apresenta{
+        height: 100%;
+        margin-top: 20px;
+    }
+    /* caixa do login*/
+    .box-login{
+        height: 650px;
+        border-radius: 30px;
+    }
+    /* caixa de login*/
+    .box-login{
+        width: 100%;
+    }
+    /*input de login e senha*/
+    .item1{
+        width: 80%;
+    }
+    /*botão de envio do login*/
+    #butao{
+        width: 80%;
+    }
+ }
+@media (min-width:480px) {
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+    /*box*/
+    .box{
+        width: 450px;
+        height: auto;
+        justify-content: center;
+        border-radius: 0px 0px 30px 30px;
+        margin: 50px 0px 50px 0px;
+    }
+    /* div da img*/
+    .box-img{
+        width: 370px;
+        height: auto;
+    }
+    /* img */
+    .foto-apresenta{
+        height: 100%;
+        margin-top: 20px;
+    }
+    /* caixa do login*/
+    .box-login{
+        height: 650px;
+        border-radius: 30px;
+    }
+    /* caixa de login*/
+    .box-login{
+        width: 100%;
+    }
+    /*input de login e senha*/
+    .item1{
+        width: 70%;
+    }
+    /*botão de envio do login*/
+    #butao{
+        width: 70%;
+    }
+  }
+@media (min-width:600px) { 
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+    /*box*/
+    .box{
+        width: 550px;
+        height: auto;
+        justify-content: center;
+        border-radius: 0px 0px 30px 30px;
+        margin: 50px 0px 50px 0px;
+    }
+    /* div da img*/
+    .box-img{
+        width: 370px;
+        height: auto;
+    }
+    /* img */
+    .foto-apresenta{
+        height: 100%;
+        margin-top: 20px;
+    }
+    /* caixa do login*/
+    .box-login{
+        height: 650px;
+        border-radius: 30px;
+    }
+    /* caixa de login*/
+    .box-login{
+        width: 100%;
+    }
+    /*input de login e senha*/
+    .item1{
+        width: 70%;
+    }
+    /*botão de envio do login*/
+    #butao{
+        width: 70%;
+    }
+}
+@media (min-width:801px) { 
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 80px;
+    }
+    /*box*/
+    .box{
+        width: 90%;
+        height: auto;
+        justify-content: space-between;
+        border-radius: 0px 50px 50px 0px;
+        margin: 50px 0px 50px 0px;
+    }
+    /* div da img*/
+    .box-img{
+        width: 346px;
+        height: 600px;
+    }
+    /* img */
+    .foto-apresenta{
+        height: 75%;
+    }
+    /* caixa do login*/
+    .box-login{
+        height: 600px;
+        border-radius: 50px;
+    }
+    /* caixa de login*/
+    .box-login{
+        width: 370px;
+    }
+    /*input de login e senha*/
+    .item1{
+        width: 70%;
+    }
+    /*botão de envio do login*/
+    #butao{
+        width: 70%;
+    }
+}
+@media (min-width:1025px) { 
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+    /*box*/
+    .box{
+        width: 90%;
+        height: auto;
+        justify-content: space-between;
+        border-radius: 0px 50px 50px 0px;
+        margin: 50px 0px 50px 0px;
+    }
+    /* div da img*/
+    .box-img{
+        width: 500px;
+        height: 600px;
+    }
+    /* img */
+    .foto-apresenta{
+        height: 85%;
+    }
+    /* caixa do login*/
+    .box-login{
+        height: 600px;
+        border-radius: 50px;
+    }
+    /* caixa de login*/
+    .box-login{
+        width: 370px;
+    }
+    /*input de login e senha*/
+    .item1{
+        width: 70%;
+    }
+    /*botão de envio do login*/
+    #butao{
+        width: 70%;
+    }
+}
+@media (min-width:1281px) { 
+    /*logo*/
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+    /*box*/
+    .box{
+        width: 1100px;
+        height: auto;
+        justify-content: space-between;
+        border-radius: 0px 50px 50px 0px;
+        margin: 50px 0px 50px 0px;
+    }
+    /* div da img*/
+    .box-img{
+        width: 600px;
+        height: 600px;
+    }
+    /* img */
+    .foto-apresenta{
+        height: 85%;
+    }
+    /* caixa do login*/
+    .box-login{
+        height: 600px;
+        border-radius: 50px;
+    }
+    /* caixa de login*/
+    .box-login{
+        width: 370px;
+    }
+    /*input de login e senha*/
+    .item1{
+        width: 70%;
+    }
+    /*botão de envio do login*/
+    #butao{
+        width: 70%;
+    }
+}
+
