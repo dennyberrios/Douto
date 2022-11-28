@@ -1,0 +1,92 @@
+@font-face {
+    font-family: FranklinGothic;
+    src: url(./../../fonts//FranklinGothic.ttf);
+}
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Cabeçalho/Barra de navegação */
+#navega{
+    display:flex;
+    justify-content: space-around;
+
+    background-color: #49007E;
+}
+#topo{
+    display:flex;
+    margin:0px;
+    margin-right: 10px;
+}
+li{
+    padding: 5px;
+    height: 40px;
+}
+li > .link{
+    font-family: 'FranklinGothic';
+    font-size: 1.3rem;
+}
+li > a:hover{
+    transition: 0.1s;
+    border-bottom: solid 2px white;
+}
+#btn-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+    width: 150px;
+    background-color: #ff005B;
+    color: white;
+    border: none;
+}
+#btn-login:hover{
+    transition: 0.3s;
+    background-color: #c50045;
+}
+
+
+@media (max-width:320px) {
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+ }
+@media (min-width:320px) {
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+ }
+@media (min-width:480px) {
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+  }
+@media (min-width:600px) { 
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+}
+@media (min-width:801px) { 
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 80px;
+    }
+}
+@media (min-width:1025px) { 
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+}
+@media (min-width:1281px) { 
+    
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+}
