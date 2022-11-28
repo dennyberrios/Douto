@@ -1,0 +1,544 @@
+@font-face {
+    font-family: FranklinGothic;
+    src: url(fonts/FranklinGothic.ttf);
+}
+@font-face {
+    font-family: Jokerman;
+    src: url(fonts/Jokerman.ttf);
+}
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Cabeçalho/Barra de navegação */
+#navega{
+    display:flex;
+    justify-content: space-around;
+
+    background-color: #49007E;
+}
+#topo{
+    display:flex;
+    margin:0px;
+    margin-right: 10px;
+}
+li{
+    padding: 5px;
+    height: 40px;
+}
+li > a{
+    font-family: 'FranklinGothic';
+    font-size: 1.3rem;
+}
+li > a:hover{
+    transition: 0.1s;
+    border-bottom: solid 2px white;
+}
+/* seção de jogos */
+section{
+    width: 100%;
+    height: auto;
+    background-color: #ff7d10;
+    display: flex;
+    justify-content: center;
+}
+.painel{
+    background-color: #ff005B;
+    border:3px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* perfil do jogador */
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* div pai do jogo */
+.jogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* perfil do jogador */
+.perfil-foto{
+    border: 10px solid #ff7d10;
+    border-radius: 50%;
+    background-image: url("assets/img/perfil/logoico.png");
+    background-repeat: no-repeat;
+    background-size: 105%;
+}
+.procentagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    width: 100%;
+}
+.barra{
+    border: 5px solid black;
+}
+.color-1{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(85, 255, 0);
+}
+.color-2{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+/* botões do jogo */
+.botao{
+    display: flex;
+    justify-content: space-around;
+}
+.color-btn1{
+    background-color: rgb(255 178 56);
+}
+.color-btn2{
+    background-color: rgb(73 0 126);
+}
+.color-btn1:hover{
+    transition: 0.2s;
+    background-color: rgb(227, 159, 50);
+}
+.color-btn2:hover{
+    transition: 0.2s;
+    background-color: rgb(95, 28, 143);
+}
+/* Rodape */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    background-color: #49007E;
+    color: #ffffff;
+}
+.box-table{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px;
+}
+hr{
+    width: 100%;
+    padding: 1px;
+}
+footer > div > table, tr{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: white;
+} 
+.rodFlex{
+    text-decoration: none;
+    display: flex;
+}
+.tab{
+    margin-top: 50px;
+}
+.red-sociais{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.red-sociais > div > a{
+    margin: 5px;
+}
+@media (max-width:320px) {
+    .painel{
+        width: 80%;
+        height: auto;
+        margin: 10px;
+    }
+    .perfil{
+        width: 400px;
+        height: auto;
+    }
+    .jogo{
+        width: 400px;
+        height: 190px;
+    }
+    .perfil-foto{
+        margin-top: 30px;
+        width: 100px;
+        height: 100px;
+    }
+    .barra{
+        width: 60%;
+        height: 30px;
+        border: 3px solid black;
+        margin: 5px;
+    }
+    .img-jogo{
+        width: 100%;
+        height: 150px;
+        }
+    .botao{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .btn-jogo{
+        color: white;
+        border: none;
+        margin: 5px;
+        width: 30%;
+        height: 20px;
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+ }
+@media (min-width:320px) {
+    .painel{
+        width: 80%;
+        height: auto;
+        margin: 50px;
+    }
+    .perfil{
+        width: 400px;
+        height: auto;
+    }
+    .jogo{
+        width: 400px;
+        height: 240px;
+    }
+    .perfil-foto{
+        margin-top: 30px;
+        width: 100px;
+        height: 100px;
+    }
+    .barra{
+        width: 60%;
+        height: 30px;
+        border: 3px solid black;
+        margin: 5px;
+    }
+    .img-jogo{
+        width: 100%;
+        height: 180px;
+        }
+    .botao{
+        width: 100%;
+        margin: 5px;
+    }
+    .btn-jogo{
+        color: white;
+        border: none;
+        margin: 5px;
+        width: 30%;
+        height: 30px;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+ }
+@media (min-width:480px) {
+    .painel{
+        width: 1200px;
+        height: auto;
+        margin: 50px;
+    }
+    .perfil{
+        width: 400px;
+        height: auto;
+    }
+    .jogo{
+        width: 400px;
+        height: 300px;
+    }
+    .perfil-foto{
+        margin-top: 30px;
+        width: 150px;
+        height: 150px;
+    }
+    .barra{
+        width: 60%;
+        height: 30px;
+        border: 2px solid black;
+        margin: 5px;
+    }
+    .img-jogo{
+        width: 100%;
+        height: 225px;
+        }
+    .botao{
+        width: 100%;
+        height: 60px;
+        margin: 5px;
+    }
+    .btn-jogo{
+        color: white;
+        border: none;
+        margin: 5px;
+        width: 30%;
+        height: 50px;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+  }
+@media (min-width:600px) {
+    .painel{
+        width: 1200px;
+        height: auto;
+        margin: 50px;
+    }
+    .perfil{
+        width: 400px;
+        height: auto;
+    }
+    .jogo{
+        width: 400px;
+        height: 305px;
+    }
+    .perfil-foto{
+        margin-top: 30px;
+        width: 130px;
+        height: 130px;
+    }
+    .barra{
+        width: 60%;
+        height: 40px;
+        border: 3px solid black;
+        margin: 5px;
+    }
+    .img-jogo{
+        width: 100%;
+        height: 225px;
+        }
+    .botao{
+        width: 100%;
+        height: 60px;
+        margin: 5px;
+    }
+    .btn-jogo{
+        color: white;
+        border: none;
+        margin: 5px;
+        width: 30%;
+        height: 50px;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+ }
+ @media (min-width: 801px) {
+    .painel{
+        width: 1200px;
+        height: auto;
+        margin: 50px;
+    }
+    .perfil{
+        width: 500px;
+        height: 400px;
+    }
+    .jogo{
+        width: 500px;
+        height: 370px;
+    }
+    .perfil-foto{
+        margin-top: 30px;
+        width: 180px;
+        height: 180px;
+    }
+    .barra{
+        width: 60%;
+        height: 40px;
+        border: 4px solid black;
+        margin: 5px;
+    }
+    .img-jogo{
+        width: 100%;
+        height: 285px;
+        }
+    .botao{
+        width: 100%;
+        height: 60px;
+        margin: 5px;
+    }
+    .btn-jogo{
+        color: white;
+        border: none;
+        margin: 5px;
+        width: 30%;
+        height: 50px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 80px;
+    }
+ }
+@media (min-width:856px) {
+    .painel{
+        width: 1200px;
+        height: auto;
+        margin: 50px;
+    }
+    .perfil{
+        width: 250px;
+        height: 400px;
+    }
+    .jogo{
+        width: 500px;
+        height: 400px;
+    }
+    .perfil-foto{
+        margin-top: 30px;
+        width: 180px;
+        height: 180px;
+    }
+    .barra{
+        width: 80%;
+        height: 60px;
+        border: 4px solid black;
+        margin: 5px;
+    }
+    .img-jogo{
+        width: 100%;
+        height: 285px;
+        }
+    .botao{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+    .btn-jogo{
+        color: white;
+        border: none;
+        margin: 5px;
+        width: 30%;
+        height: 50px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 80px;
+    }
+ }
+@media (min-width:1025px) { 
+    .painel{
+        width: 1200px;
+        height: auto;
+        margin: 50px;
+    }
+    .perfil{
+        width: 350px;
+        height: 450px;
+    }
+    .jogo{
+        width: 550px;
+        height: 450px;
+    }
+    .perfil-foto{
+        margin-top: 30px;
+        width: 250px;
+        height: 250px;
+    }
+    .barra{
+        width: 80%;
+        height: 60px;
+        border: 4px solid black;
+        margin: 5px;
+    }
+    .img-jogo{
+        width: 100%;
+        height: 315px;
+        }
+    .botao{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+    .btn-jogo{
+        color: white;
+        border: none;
+        margin: 5px;
+        width: 30%;
+        height: 50px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+}
+@media (min-width:1281px) {
+    .painel{
+        width: 1200px;
+        height: auto;
+        margin: 50px;
+    }
+    .perfil{
+        width: 400px;
+        height: 550px;
+    }
+    .jogo{
+        width: 700px;
+        height: 550px;
+    }
+    .perfil-foto{
+        margin-top: 30px;
+        width: 250px;
+        height: 250px;
+    }
+    .barra{
+        width: 80%;
+        height: 60px;
+        border: 4px solid black;
+        margin: 5px;
+    }
+    .img-jogo{
+    width: 100%;
+    height: 400px;
+    }
+    .botao{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+    .btn-jogo{
+        color: white;
+        border: none;
+        margin: 5px;
+        width: 30%;
+        height: 60px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+ }

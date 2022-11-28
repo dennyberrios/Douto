@@ -1,0 +1,458 @@
+@font-face {
+    font-family: GEO212NC;
+    src: url(fonts/GEO212NC.ttf);
+}
+@font-face {
+    font-family: FranklinGothic;
+    src: url(fonts/FranklinGothic.ttf);
+}
+@font-face {
+    font-family: panetaX;
+    src: url(fonts/PlanetXCompact-2oGX.otf);
+}
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Cabeçalho/Barra de navegação */
+#navega{
+    display:flex;
+    justify-content: space-around;
+
+    background-color: #49007E;
+}
+#topo{
+    display:flex;
+    margin:0px;
+    margin-right: 10px;
+}
+li{
+    padding: 5px;
+    height: 40px;
+}
+li > a{
+    font-family: 'FranklinGothic';
+    font-size: 1.3rem;
+}
+li > a:hover{
+    transition: 0.1s;
+    border-bottom: solid 2px white;
+}
+/* aprensentação do inicio da home */
+.color-apresentacao{
+    background-color: #ff005B;
+    display: flex;
+}
+.apresentacao{
+    width: 100%;
+    color: white;
+}
+.text-apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-apresentacao > div {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+.text-apresentacao > div > h1{
+    width: 100%;
+    color: white;
+    font-family: 'panetaX';
+}
+.text-apresentacao > div > p{
+    letter-spacing: 1px;
+    font-family: 'GEO212NC';
+    font-weight: bolder;
+}
+/* carrosel da home */
+.color-carrossel{
+    display: flex;
+    background-color: #ffb238;
+    justify-content: center;
+    align-items: center;
+}
+#carouselExampleControls{
+    border-radius: 15px;
+}
+.carousel-item > img{
+    border-radius: 15px;
+}
+/* jogos e historias da home */
+.jogos-historia{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.conteudo{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    border: none;
+}
+.conteudo:hover{
+    transition: 0.2s;
+    box-shadow: 0 0 7px black;
+}
+.jogos{
+    background-image: url("jogos.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.historias{
+    background-image: url("historias.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/* Rodape */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    background-color: #49007E;
+    color: #ffffff;
+}
+.box-table{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px;
+}
+hr{
+    width: 100%;
+    padding: 1px;
+}
+footer > div > table, tr{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: white;
+} 
+.rodFlex{
+    text-decoration: none;
+    display: flex;
+}
+.tab{
+    margin-top: 50px;
+}
+.red-sociais{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.red-sociais > div > a{
+    margin: 5px;
+}
+@media (max-width:320px){
+    /* Jogos/historia */
+    .item{
+        width: 300px;
+        height: 200px;
+        margin: 30px 0px 30px 0px;
+    }
+    /* Apresentação */
+    .text-apresentacao{
+        width: 250px;
+        padding: 20px;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 90%;
+        border-radius: 15px;
+        margin: 30px 0px 30px 0px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .img-apresentacao{
+        width: 100%;
+    }
+    .apresentacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+ }
+@media (min-width:320px){
+    /* Jogos/historia */
+    .item{
+        width: 280px;
+        height: 250px;
+        margin: 20px;
+    }
+    /* Apresentação */
+    .text-apresentacao{
+        width: 310px;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 300px;
+        border-radius: 15px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: 30vh;
+    }
+    .img-apresentacao{
+        width: 300px;
+    }
+    .apresentacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+ }
+@media (min-width:480px) {
+    /* Jogos/historia */
+    .jogos-historia{
+        height: auto;
+    }
+    .item{
+        width: 400px;
+        height: 300px;
+        margin: 30px 0px 30px 0px;
+    }
+    /* Apresentação */
+    .text-apresentacao{
+        width: 400px;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 400px;
+        border-radius: 15px;
+        margin: 30px 0px 30px 0px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .img-apresentacao{
+        width: 400px;
+    }
+    .apresentacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+  }
+@media (min-width:600px) {
+    /* Jogos/historia */
+    .jogos-historia{
+        height: auto;
+    }
+    .item{
+        width: 400px;
+        height: 300px;
+        margin: 30px 0px 30px 0px;
+    } 
+    /* Apresentação */
+    .text-apresentacao{
+        width: 400px;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 500px;
+        border-radius: 15px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .img-apresentacao{
+        width: 400px;
+    }
+    .apresentacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+ }
+@media (min-width:801px) {
+    /* Jogos/historia */
+    .jogos-historia{
+        height: auto;
+    }
+    .item{
+        width: 400px;
+        height: 300px;
+        margin: 30px 0px 30px 0px;
+    }
+    /* Apresentação */
+    .apresentacao{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    /* Texto da apresentação */
+    .text-apresentacao{
+        width: 565px;
+        margin: 5px;
+    }
+    
+    .text-apresentacao > div > h1{
+        font-size: 3rem;
+    }
+    .text-apresentacao > div > p{
+        font-size: 1.3rem;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 600px;
+        border-radius: 15px;
+        margin: 30px 0px 30px 0px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .img-apresentacao{
+        width: 400px;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 80px;
+    }
+ }
+ @media (min-width:1025px) {
+    /* Jogos/historia */
+    .jogos-historia{
+        height: auto;
+    }
+    .item{
+        width: 400px;
+        height: 300px;
+        margin: 30px 0px 30px 0px;
+    }
+    /* Apresentação */
+    .apresentacao{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    /* Texto da apresentação */
+    .text-apresentacao{
+        width: 600px;
+        padding: 40px;
+    }
+    
+    .text-apresentacao > div > h1{
+        font-size: 3rem;
+    }
+    .text-apresentacao > div > p{
+        font-size: 1.5rem;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 600px;
+        border-radius: 15px;
+        margin: 30px 0px 30px 0px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .img-apresentacao{
+        width: 400px;
+    }
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+  }
+@media (min-width:1281px) {
+    /* Jogos/historia */
+    .jogos-historia{
+        height: auto;
+    }
+    .item{
+        width: 500px;
+        height: 400px;
+        margin: 30px 0px 30px 0px;
+    }
+    /* Apresentação */
+    .apresentacao{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    /* Texto da apresentação */
+    .text-apresentacao{
+        width: 765px;
+        padding: 50px;
+    }
+    
+    .text-apresentacao > div > h1{
+        font-size: 3rem;
+    }
+    .text-apresentacao > div > p{
+        font-size: 1.5rem;
+    }
+    /* Carrossel */
+    #carouselExampleControls{
+        width: 600px;
+        border-radius: 15px;
+        margin: 30px 0px 30px 0px;
+    }
+    .color-carrossel{
+        width: 100%;
+        height: auto;
+    }
+    .img-apresentacao{
+        width: 400px;
+        margin: 10px;
+    }
+    /* Logo */
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+ }

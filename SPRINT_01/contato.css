@@ -1,0 +1,216 @@
+@font-face {
+    font-family: FranklinGothic;
+    src: url(fonts/FranklinGothic.ttf);
+}
+@font-face {
+    font-family: Jokerman;
+    src: url(fonts/Jokerman.ttf);
+}
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Cabeçalho/Barra de navegação */
+#navega{
+    display:flex;
+    justify-content: space-around;
+
+    background-color: #49007E;
+}
+#topo{
+    display:flex;
+    margin:0px;
+    margin-right: 10px;
+}
+li{
+    padding: 5px;
+    height: 40px;
+}
+li > a{
+    font-family: 'FranklinGothic';
+    font-size: 1.3rem;
+}
+li > a:hover{
+    transition: 0.1s;
+    border-bottom: solid 2px white;
+}
+/* main */
+main{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding: 70px 10px 70px 10px;
+}
+/* seção */
+section{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 500px;
+    box-shadow: 0 0 3px;
+    background-color: #f8f9fa;
+}
+/* caixa contem todo o conteúdo do feedback*/
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    padding: 10px;
+}
+/* titulo */
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #013b77;
+}
+/* dropdown do */
+.dropdown-feed{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+}
+#feedback{
+    width: 210px;
+}
+.cx-texto{
+    margin:0px;
+    padding: 0px;
+}
+/* botão */
+.bt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#botao{
+    background-color: #191970e0;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+/* Rodape */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    background-color: #49007E;
+    color: #ffffff;
+}
+.box-table{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px;
+}
+hr{
+    width: 100%;
+    padding: 1px;
+}
+footer > div > table, tr{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: white;
+} 
+.rodFlex{
+    text-decoration: none;
+    display: flex;
+}
+.tab{
+    margin-top: 50px;
+}
+.red-sociais{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.red-sociais > div > a{
+    margin: 5px;
+}
+
+@media (max-width:320px) {
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+ }
+@media (min-width:320px) {
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+ }
+@media (max-width:370px) {
+    /* box */
+    .box{
+        width: 200px;
+        padding: 10px;
+        } 
+        /* feedback */
+        #feedback{
+            width: 180px;
+        }
+        /* seção */
+        section{
+            width: 800px;
+            height: 600px;
+        }
+        /* h1 do titlo */
+        .title > h1{
+            font-size: 1.5rem;
+        }
+ }
+@media (min-width:480px) {
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+  }
+@media (min-width:600px) { 
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 65px;
+    }
+}
+@media (min-width:801px) { 
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 80px;
+    }
+}
+@media (min-width:1025px) { 
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+}
+@media (min-width:1281px) { 
+    
+    .logo{
+        margin: 10px 0px 10px 0px;
+        height: 90px;
+    }
+}
+
