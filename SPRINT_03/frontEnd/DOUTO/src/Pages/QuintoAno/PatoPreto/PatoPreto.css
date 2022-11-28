@@ -1,0 +1,42 @@
+@media (max-width:320px) {
+    .PatinhoPreto {
+        width: 200px; 
+        height: 150px;
+    }
+}
+@media (min-width:320px) {
+    .PatinhoPreto {
+        width: 250px; 
+        height: 200px;
+    }
+}
+@media (min-width:480px) {
+    .PatinhoPreto {
+        width: 350px; 
+        height: 300px;
+    }
+}
+@media (min-width:600px) {
+    .PatinhoPreto {
+        width: 350px; 
+        height: 300px;
+    }
+}
+@media (min-width:801px) {
+    .PatinhoPreto {
+        width: 350px; 
+        height: 300px;
+    }
+}
+@media (min-width:1025px) {
+    .PatinhoPreto {
+        width: 350px; 
+        height: 300px;
+    }
+}
+@media (min-width:1281px) {
+    .PatinhoPreto {
+        width: 350px; 
+        height: 300px;
+    }
+}
