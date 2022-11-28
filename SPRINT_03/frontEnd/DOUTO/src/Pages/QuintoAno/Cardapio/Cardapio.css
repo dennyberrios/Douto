@@ -1,0 +1,42 @@
+@media (max-width:320px) {
+    .Cardapio {
+        width: 200px; 
+        height: 150px;
+    }
+}
+@media (min-width:320px) {
+    .Cardapio {
+        width: 250px; 
+        height: 200px;
+    }
+}
+@media (min-width:480px) {
+    .Cardapio {
+        width: 350px; 
+        height: 250px;
+    }
+}
+@media (min-width:600px) {
+    .Cardapio {
+        width: 350px; 
+        height: 250px;
+    }
+}
+@media (min-width:801px) {
+    .Cardapio {
+        width: 350px; 
+        height: 250px;
+    }
+}
+@media (min-width:1025px) {
+    .Cardapio {
+        width: 350px; 
+        height: 250px;
+    }
+}
+@media (min-width:1281px) {
+    .Cardapio {
+        width: 350px; 
+        height: 250px;
+    }
+}
