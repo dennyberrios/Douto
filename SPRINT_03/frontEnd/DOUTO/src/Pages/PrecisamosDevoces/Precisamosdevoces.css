@@ -1,0 +1,69 @@
+.section13{
+    width: 100%;
+    background-color: #ff005B;
+}
+.imgPrecisamosDeVoces{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.incentive{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* segunda seção */
+.section2{
+    width: 100%;
+    height: auto;
+    background-color: #ffb238;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 10px 50px 10px;
+}
+/* imagem precisamos de vocês da section-1-3 */
+.imgPrecisamos{
+    width: 600px;
+    height: 300px;
+    margin-top: 50px;
+}
+/* imagem logo de apresentação da section-1-3 */
+.imgLogoApresentacao{
+    width: 850px;
+    height: 300px;
+    margin: 50px 0px 50px 0px;
+}
+/* imagem incentive seu filho da section-1-3 */
+.imgIncetive{
+    width: 80%;
+    height: 150px;
+    margin-bottom: -210px;
+}
+/* imagem de cachorro da section-2 */
+.imgCachorro{
+    width: 170px;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+/* texto informativo da section-2 */
+.textoInformativo{
+    width: 600px;
+    text-align: justify;
+}
+/* h2 do texto informativo da section-2 */
+.textoInformativo > h2{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'geonetr212';
+}
+/* segunda imagem logo de apresentação da section-1-3 */
+.imgLogoApresentacao2{
+    width: 850px;
+    height: 300px;
+    margin: 50px 0px 50px 0px;
+}
