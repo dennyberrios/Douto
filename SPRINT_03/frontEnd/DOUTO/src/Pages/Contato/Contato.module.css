@@ -1,0 +1,101 @@
+/* main */
+.mainContato{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 70px 10px 70px 10px;
+}
+/* seção */
+.formContato{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: auto;
+    box-shadow: 0 0 3px;
+    background-color: #f8f9fa;
+}
+/* caixa contem todo o conteúdo do feedback*/
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    padding: 10px;
+}
+/* titulo */
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    color: #013b77;
+}
+.divTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.divTitulo > p{
+    font-weight: bold;
+    font-size: 1.0rem;
+    color: rgb(115, 113, 113);
+    text-align: center;
+}
+/* dropdown do */
+.dropdownFeed{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+}
+#feedBack{
+    width: 210px;
+}
+/* botão */
+.bt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#botao{
+    background-color: #191970e0;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+@media (max-width:320px) {
+    /* seção */
+    .sectionContato{
+        width: 800px;
+        height: 700px;
+    }
+ }
+
+@media (max-width:370px) {
+    /* box */
+    .box{
+        width: 200px;
+        padding: 10px;
+    } 
+    /* feedback */
+    #feedBack{
+        width: 180px;
+    }
+    /* seção */
+    .sectionContato{
+        width: 800px;
+    }
+    /* h1 do titlo */
+    .divTitle > h1{
+        font-size: 1.5rem;
+    }
+ }
