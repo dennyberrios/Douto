@@ -1,0 +1,111 @@
+.imgParabens {
+    border-radius: 10px;
+}
+.AlinhaParabens {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.conteudoParabens {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnParabens {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255 178 56);
+}
+.btnParabens:hover {
+    color: white;
+    background-color: rgb(236, 166, 53);
+}
+
+@media (max-width:320px) {
+    .imgParabens {
+        width: 200px; 
+        height: 150px;
+    }
+    .btnParabens {
+        width: 110px;
+        font-size: 1.1rem;
+        padding: 5px 5px;
+        font-weight: bold;
+    }
+}
+@media (min-width:320px) {
+    .imgParabens {
+        width: 270px; 
+        height: 220px;
+    }
+    .btnParabens {
+        width: 110px;
+        font-size: 1.1rem;
+        padding: 5px 5px;
+        font-weight: bold;
+    }
+}
+@media (min-width:480px) {
+    .imgParabens {
+        width: 400px; 
+        height: 300px;
+    }
+    .btnParabens {
+        width: 250px;
+        font-size: 1.3rem;
+        padding: 10px 10px;
+        font-weight: bold;
+    }
+}
+@media (min-width:600px) {
+    .imgParabens {
+        width: 500px; 
+        height: 400px;
+    }
+    .btnParabens {
+        width: 300px;
+        font-size: 1.6rem;
+        padding: 10px 10px;
+        font-weight: bold;
+    }
+}
+@media (min-width:801px) {
+    .imgParabens {
+        width: 600px; 
+        height: 400px;
+    }
+    .btnParabens {
+        width: 300px;
+        font-size: 1.7rem;
+        padding: 10px 10px;
+        font-weight: bold;
+    }
+}
+@media (min-width:1025px) {
+    .imgParabens {
+        width: 700px; 
+        height: 500px;
+    }
+    .btnParabens {
+        width: 300px;
+        font-size: 1.6rem;
+        padding: 10px 10px;
+        font-weight: bold;
+    }
+}
+@media (min-width:1281px) {
+    .imgParabens {
+        width: 700px; 
+        height: 500px;
+    }
+    .btnParabens {
+        width: 300px;
+        font-size: 1.8rem;
+        padding: 10px 10px;
+        font-weight: bold;
+    }
+}
